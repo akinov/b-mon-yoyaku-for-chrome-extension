@@ -1,6 +1,6 @@
 {
-  "name": "b-monster Reserver",
-  "description": "Auto Reserve b-monster",
+  "name": "b-monster 予約",
+  "description": "b-monsterの予約、バッグの変更を自動で行います",
   "version": "0.1",
   "permissions": [
     "tabs",
