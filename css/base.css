@@ -1,0 +1,31 @@
+body {
+  background: url('../images/ebisu.jpg');
+  background-size: contain;
+  height: 370px;
+  width: 280px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 23px;
+}
+
+td {
+  padding: 1px 9px 2px;
+  text-align: center;
+}
+
+label {
+  background: #fff;
+  border: 1px solid #dd022c;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 12px;
+  height: 17px;
+  width: 17px;
+}
+
+label.selected {
+  background: #dd022c;
+  color: #fff;
+}
