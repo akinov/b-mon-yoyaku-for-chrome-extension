@@ -7,7 +7,8 @@
     "storage"
   ],
   "browser_action": {
-    "default_icon": "images/icon_off.png"
+    "default_icon": "images/icon_off.png",
+    "default_title": "b-monster 予約"
   },
   "background": {
     "scripts": ["javascripts/background.js"]
