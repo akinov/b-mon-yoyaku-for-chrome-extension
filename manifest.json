@@ -1,20 +1,23 @@
 {
   "name": "b-monster 予約",
   "description": "b-monsterの予約、バッグの変更を自動で行います",
-  "version": "0.1",
+  "version": "0.2",
   "permissions": [
     "tabs",
     "storage"
   ],
   "browser_action": {
-    "default_icon": "icon_off.png"
+    "default_icon": "images/icon_off.png"
   },
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["javascripts/background.js"]
   },
   "content_scripts" : [{
     "matches" : ["https://www.b-monster.jp/*"],
-    "js" : ["jquery.js","content.js"]
+    "js" : [
+      "javascripts/lib/jquery.js",
+      "javascripts/content.js"
+    ]
   }],
   "manifest_version": 2
 }

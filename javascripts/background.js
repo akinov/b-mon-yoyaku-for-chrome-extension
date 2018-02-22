@@ -51,13 +51,13 @@ function startReserve() {
   } else {
     checkInterval = setInterval(checkReserve, 3000);
   }
-  chrome.browserAction.setIcon({ path: "icon_on.png" });
+  chrome.browserAction.setIcon({ path: "images/icon_on.png" });
 }
 
 function stopReserve() {
   clearInterval(checkInterval);
   clearInterval(completeInterval);
-  chrome.browserAction.setIcon({ path: "icon_off.png" });
+  chrome.browserAction.setIcon({ path: "images/icon_off.png" });
   chrome.storage.local.set({ 'working': false });
 }
 
