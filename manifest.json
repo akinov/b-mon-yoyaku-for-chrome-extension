@@ -1,0 +1,17 @@
+{
+  "name": "b-monster Reserver",
+  "description": "Auto Reserve b-monster",
+  "version": "0.1",
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_icon": "icon_off.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts" : [{
+    "matches" : ["https://www.b-monster.jp/*"],
+    "js" : ["jquery.js","content.js"]
+  }],
+  "manifest_version": 2
+}
