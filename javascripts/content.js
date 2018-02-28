@@ -41,7 +41,7 @@ function checkReserve() {
     // bagIdをinputに入れる
     $('#your-reservation input[name=punchbag]').first().val(id);
     // 完了をbackgroundに通知
-    chrome.runtime.sendMessage({greeting: "moveComplete"});
+    chrome.runtime.sendMessage({greeting: "checkComplete"});
     // Submit
     $('button[data-action=reserveByCourse]').first().prop('disabled', false).click();
   } else {
