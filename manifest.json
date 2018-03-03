@@ -1,6 +1,6 @@
 {
   "name": "b-monster 予約",
-  "description": "b-monsterの予約、バッグの変更を自動で行います",
+  "description": "b-monsterの予約、バッグの変更を自動で行います。現在は恵比寿店のみ対応",
   "version": "0.3.0",
   "permissions": [
     "tabs",
