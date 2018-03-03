@@ -1,7 +1,7 @@
 {
   "name": "b-monster 予約",
   "description": "b-monsterの予約、バッグの変更を自動で行います",
-  "version": "0.2",
+  "version": "0.3",
   "permissions": [
     "tabs",
     "storage"

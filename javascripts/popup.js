@@ -23,7 +23,10 @@ $(function(){
   $('label').on('click', function() {
     // .selectedを付け替える
     $(this).toggleClass('selected');
+    updateBag();
+  });
 
+  function updateBag() {
     // 選択済みバッグIDをまとめる
     var selectedIds = [];
     $('label.selected').each(function(){
@@ -32,7 +35,7 @@ $(function(){
 
     // localストレージに登録
     chrome.storage.local.set({ 'selectedIds': selectedIds });
-  });
+  }
 
   $reserveStart = $('#reserveStart').on('click', function(){
     $reserveStart.prop('disabled', true);
@@ -46,5 +49,10 @@ $(function(){
     $reserveStop.prop('disabled', true);
     chrome.storage.local.set({ 'working': false });
     chrome.runtime.sendMessage({ greeting: "stopReserve" });
+  });
+
+  $('#reset').on('click', function(){
+    $('label').removeClass('selected');
+    updateBag();
   });
 });
